@@ -36,7 +36,8 @@ class NewsForm
                     })
                     ->disabled(function () {
                         return !auth()->user()->isAdmin();
-                    }),
+                    })
+                    ->dehydrated(),
                 Select::make('news_category_id')
                     ->relationship('newsCategory', 'title')
                     ->required(),
