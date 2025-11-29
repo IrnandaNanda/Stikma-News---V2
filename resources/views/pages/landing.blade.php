@@ -98,7 +98,7 @@
                         class="rounded-xl md:max-h-48" style="width: 250px; object-fit: cover;">
                     <div class="mt-2 md:mt-0">
                         <p class="font-semibold text-lg">{{ $new->title }}</p>
-                        <p class="text-slate-400 mt-3 text-sm font-normal">{!! \Str::limit($news[0]->content, 100) !!}</p>
+                        <p class="text-slate-400 mt-3 text-sm font-normal">{!! \Str::limit($new->content, 100) !!}</p>
                     </div>
                 </a>
             @endforeach
